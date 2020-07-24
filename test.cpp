@@ -35,15 +35,26 @@ TEST(ToBoolTest, zlynx2) {
   EXPECT_EQ(zlynx2_tobool(bigstring), -1);
 }
 
-TEST(ToBoolTest, wovano) {
-  EXPECT_EQ(wovano_tobool("true"), 1);
-  EXPECT_EQ(wovano_tobool("false"), 0);
-  EXPECT_EQ(wovano_tobool("True"), 1);
-  EXPECT_EQ(wovano_tobool("False"), 0);
-  EXPECT_EQ(wovano_tobool("1"), 1);
-  EXPECT_EQ(wovano_tobool("0"), 0);
-  EXPECT_EQ(wovano_tobool(""), -1);
-  EXPECT_EQ(wovano_tobool(bigstring), -1);
+TEST(ToBoolTest, wovano1) {
+  EXPECT_EQ(wovano1_tobool("true"), 1);
+  EXPECT_EQ(wovano1_tobool("false"), 0);
+  EXPECT_EQ(wovano1_tobool("True"), 1);
+  EXPECT_EQ(wovano1_tobool("False"), 0);
+  EXPECT_EQ(wovano1_tobool("1"), 1);
+  EXPECT_EQ(wovano1_tobool("0"), 0);
+  EXPECT_EQ(wovano1_tobool(""), -1);
+  EXPECT_EQ(wovano1_tobool(bigstring), -1);
+}
+
+TEST(ToBoolTest, wovano2) {
+  EXPECT_EQ(wovano2_tobool("true"), 1);
+  EXPECT_EQ(wovano2_tobool("false"), 0);
+  EXPECT_EQ(wovano2_tobool("True"), 1);
+  EXPECT_EQ(wovano2_tobool("False"), 0);
+  EXPECT_EQ(wovano2_tobool("1"), 1);
+  EXPECT_EQ(wovano2_tobool("0"), 0);
+  EXPECT_EQ(wovano2_tobool(""), -1);
+  EXPECT_EQ(wovano2_tobool(bigstring), -1);
 }
 
 TEST(ToBoolTest, chux1) {
