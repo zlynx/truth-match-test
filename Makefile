@@ -1,7 +1,11 @@
+# LTO breaks benchmarking even if you use the code that is supposed to make
+# t work.
 # LTOFLAGS += -flto -fno-fat-lto-objects
-LTOFLAGS += -flto
+# LTOFLAGS += -flto
+
 OPTFLAGS += -O3 $(LTOFLAGS)
 #OPTFLAGS += -mcpu=native
+OPTFLAGS += -march=native
 FLAGS = -Wall -W -pedantic -g $(OPTFLAGS) -pthread -MMD 
 CSTD = -std=c11
 CXXSTD = -std=c++17
