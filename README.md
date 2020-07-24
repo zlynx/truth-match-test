@@ -24,12 +24,13 @@ On a Ryzen 3900X:
     -----------------------------------------------------------
     Benchmark                 Time             CPU   Iterations
     -----------------------------------------------------------
-    BM_zlynx1_tobool       15.5 ns         15.5 ns     41861511
-    BM_zlynx2_tobool       30.7 ns         30.7 ns     23307588
-    BM_wovano_tobool       14.4 ns         14.4 ns     48624468
-    BM_chux1_tobool        34.0 ns         34.0 ns     21465379
-    BM_chux2_tobool        25.6 ns         25.6 ns     26965281
-    BM_user_tobool         44.2 ns         44.2 ns     15756835
+    BM_zlynx1_tobool       15.3 ns         15.3 ns     37783286
+    BM_zlynx2_tobool       30.1 ns         30.1 ns     23518891
+    BM_wovano_tobool       17.7 ns         17.7 ns     39435506
+    BM_chux1_tobool        32.5 ns         32.5 ns     21565979
+    BM_chux2_tobool        27.5 ns         27.5 ns     25180030
+    BM_user1_tobool        15.3 ns         15.3 ns     45535030
+    BM_user2_tobool        46.1 ns         46.1 ns     15458404
 
 The test results are too noisy so I will summarize. The implementations here that do less, run faster in general.
 
