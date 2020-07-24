@@ -47,3 +47,5 @@ BENCHMARK(BM_wovano_tobool);
 BENCHMARK(BM_chux1_tobool);
 BENCHMARK(BM_chux2_tobool);
 BENCHMARK(BM_user_tobool);
+
+BENCHMARK_MAIN();
