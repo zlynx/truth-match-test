@@ -11,12 +11,13 @@ On a Power9 CPU:
     -----------------------------------------------------------
     Benchmark                 Time             CPU   Iterations
     -----------------------------------------------------------
-    BM_zlynx1_tobool       20.1 ns         20.1 ns     34741924
-    BM_zlynx2_tobool       42.0 ns         42.0 ns     16659087
-    BM_wovano_tobool       21.1 ns         21.1 ns     32994232
-    BM_chux1_tobool        47.8 ns         47.8 ns     14614435
-    BM_chux2_tobool        96.6 ns         96.6 ns      7293595
-    BM_user_tobool          128 ns          128 ns      5463872
+    BM_zlynx1_tobool       20.8 ns         20.8 ns     34717649
+    BM_zlynx2_tobool       41.9 ns         41.9 ns     16708237
+    BM_wovano_tobool       21.7 ns         21.7 ns     32041080
+    BM_chux1_tobool        49.0 ns         49.0 ns     14163944
+    BM_chux2_tobool        95.7 ns         95.7 ns      7399286
+    BM_user1_tobool        21.3 ns         21.3 ns     32978284
+    BM_user2_tobool         132 ns          132 ns      5324223
 
 On a Ryzen 3900X:
 
