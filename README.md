@@ -23,4 +23,4 @@ On a Ryzen 3900X:
 The test results are too noisy so I will summarize. The implementations here that do less, run faster in general.
 
 I wrote the tests so that they should handle "true", "false", "True", "False", "1", "0", "" and a 500 byte string.
-The only implementations that pass are zlynx2 (that's mine, I fixed it to pass!) and user (user is short for an anonymous user).
+The only implementations that pass are wovano2, zlynx2 (that's mine, I fixed it to pass!) and user (user is short for an anonymous user).
