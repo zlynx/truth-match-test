@@ -1,0 +1,4 @@
+truth-match-benchmark
+truth-match-test
+*.o
+*.d
