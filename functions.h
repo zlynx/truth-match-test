@@ -2,7 +2,8 @@
 extern "C" {
 #endif
 
-extern int zlynx_tobool(const char *);
+extern int zlynx1_tobool(const char *);
+extern int zlynx2_tobool(const char *);
 extern int wovano_tobool(const char *);
 extern int chux1_tobool(const char *);
 extern int chux2_tobool(const char *);

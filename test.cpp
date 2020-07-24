@@ -13,15 +13,26 @@ const char bigstring[] =
     "xxxxxxxxxxxxxxxxxxxxxxxx";
 const size_t bigstring_len = sizeof(bigstring);
 
-TEST(ToBoolTest, zlynx) {
-  EXPECT_EQ(zlynx_tobool("true"), 1);
-  EXPECT_EQ(zlynx_tobool("false"), 0);
-  EXPECT_EQ(zlynx_tobool("True"), 1);
-  EXPECT_EQ(zlynx_tobool("False"), 0);
-  EXPECT_EQ(zlynx_tobool("1"), 1);
-  EXPECT_EQ(zlynx_tobool("0"), 0);
-  EXPECT_EQ(zlynx_tobool(""), -1);
-  EXPECT_EQ(zlynx_tobool(bigstring), -1);
+TEST(ToBoolTest, zlynx1) {
+  EXPECT_EQ(zlynx1_tobool("true"), 1);
+  EXPECT_EQ(zlynx1_tobool("false"), 0);
+  EXPECT_EQ(zlynx1_tobool("True"), 1);
+  EXPECT_EQ(zlynx1_tobool("False"), 0);
+  EXPECT_EQ(zlynx1_tobool("1"), 1);
+  EXPECT_EQ(zlynx1_tobool("0"), 0);
+  EXPECT_EQ(zlynx1_tobool(""), -1);
+  EXPECT_EQ(zlynx1_tobool(bigstring), -1);
+}
+
+TEST(ToBoolTest, zlynx2) {
+  EXPECT_EQ(zlynx2_tobool("true"), 1);
+  EXPECT_EQ(zlynx2_tobool("false"), 0);
+  EXPECT_EQ(zlynx2_tobool("True"), 1);
+  EXPECT_EQ(zlynx2_tobool("False"), 0);
+  EXPECT_EQ(zlynx2_tobool("1"), 1);
+  EXPECT_EQ(zlynx2_tobool("0"), 0);
+  EXPECT_EQ(zlynx2_tobool(""), -1);
+  EXPECT_EQ(zlynx2_tobool(bigstring), -1);
 }
 
 TEST(ToBoolTest, wovano) {
