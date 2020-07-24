@@ -1,8 +1,10 @@
 #include <stdint.h>
 #include <string.h>
 
-int user_tobool(const char *const StrIn, const unsigned Len) {
+int user_tobool(const char *const StrIn, unsigned Len) {
   int64_t Word = 0;
+  // There was a bug here if Len was bigger than Word
+  Len = (Len > sizeof Word) ? sizeof Word : Len;
   memcpy(&Word, StrIn, Len);
   switch (Word | 32) {
   case '0':

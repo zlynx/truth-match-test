@@ -6,7 +6,7 @@ extern int zlynx_tobool(const char *);
 extern int wovano_tobool(const char *);
 extern int chux1_tobool(const char *);
 extern int chux2_tobool(const char *);
-extern int user_tobool(const char *, const unsigned);
+extern int user_tobool(const char *, unsigned);
 
 #ifdef __cplusplus
 }
